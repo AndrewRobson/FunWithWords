@@ -13,9 +13,26 @@ This task takes a directory of files and processes them so that when a requested
 
 Using the terminal for the following:
 
+Inside Task 1 directory run: 
+```sh
+$ python -m unittest discover -t ../
 ```
-Inside Task 1 directory run: python -m unittest discover -t ../
-Inside Task2 directory run: python -m unittest discover -t ../
+Inside Task2 directory run: 
+``` sh
+$ python -m unittest discover -t ../
+```
+Global package: 
+``` sh
+$ python -m unittest discover
+```
 
-Global package: python -m unittest discover
-```
+## Todo
+
+- Add more tests
+- Intergration tests
+- Store common lines in a file or database so data can be built up over time
+
+## Assumptions
+
+- There is always a directory specified
+- Users will only input the same file once
